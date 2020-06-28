@@ -1,6 +1,6 @@
 # Wikipedia Article Count Words
 
-Using an _HTTP GET_ method, retrieve information from Wikipedia using a given topic. Query https://en.wikipedia.org/w/api.php?action=parse&amp;section=0&amp;prop=text&amp;format=json&amp;page=[topic] to get the _topic_ Wikipedia article. Print the total number of times that the string _topic_ appears in the article's text field.
+Using an _HTTP GET_ method, retrieve information from Wikipedia using a given topic. Query https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page=[topic] to get the _topic_ Wikipedia article. Print the total number of times that the string _topic_ appears in the article's text field.
 
 Note: te search is case-sensitive.
 
