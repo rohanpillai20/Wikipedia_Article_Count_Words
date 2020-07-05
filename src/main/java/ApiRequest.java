@@ -43,16 +43,16 @@ public class ApiRequest {
             Gson gson = new Gson();
             JsonObject jsonObject = gson.fromJson(response.toString(), JsonObject.class);
 
-            jsonObject.getAsJsonObject("parse");
-            String text = jsonObject.getAsJsonObject("parse").get("text").toString();
-            text = text.replaceAll("[^a-zA-Z0-9]+", " ");
-
-            String[] textArray = text.split(" ");
+            String[] textArray =
+                    jsonObject.getAsJsonObject("parse").get("text").toString().replaceAll("[^a-zA-Z0-9]+", " ")
+                              .split(" ");
 
             for (String s : textArray) {
-                if (topic.equals(s))
+                if (topic.equals(s)) {
                     count++;
+                }
             }
+
         } catch (Exception e) {
             e.printStackTrace();
         } finally {
