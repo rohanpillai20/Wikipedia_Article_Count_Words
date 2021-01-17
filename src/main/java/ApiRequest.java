@@ -1,8 +1,12 @@
+//Import libraries
 import java.net.*;
 import java.io.*;
 import java.util.*;
 import com.google.gson.*;
-        
+
+....
+
+//Inside main function
 try{
     URL obj = new URL("https://en.wikipedia.org/w/api.php?action=parse&section=0&prop=text&format=json&page=" + topic);
     HttpURLConnection con = (HttpURLConnection) obj.openConnection();
